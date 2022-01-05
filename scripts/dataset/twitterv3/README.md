@@ -36,7 +36,7 @@ python scripts/dataset/twitterv3/create_dataset.py \
 ```
 
 
-### 3. (if necessary) tokenize text files in 'dataset.ja.1turn'.
+### 3. (if necessary) tokenize messages in 'dataset.ja.1turn' for the following filtering step.
 ```
 #### Ja data
 python scripts/dataset/twitterv3/tokenize.py \
@@ -47,7 +47,7 @@ python scripts/dataset/twitterv3/tokenize.py \
 ```
 
 
-### 4. (if necessary) filter conversations by their length, whether they were made by bots, etc. 
+### 4. (if necessary) filter conversations by their length, whether they were made by bots, etc. `bot.uids` is also stored in the storage above.
 ```
 #### Ja data
 python scripts/dataset/twitterv3/filter_dialogs.py \
