@@ -29,8 +29,7 @@ cd ..
 
 ## Data preparation
 
-
-
+# refer to [scripts/dataset/twitterv3](https://github.com/jack-and-rozz/speculative_sampling/blob/master/scripts/dataset/twitterv3/README.md).
 
 ## Training
 ```
