@@ -1,7 +1,12 @@
 
-### 0. crawl tweets and make lists of daily tweets. The format of the lists is as follows. Each column is separated by '\t'.
+### 0. crawl tweets and make lists of daily tweets. 
+The format of the lists is as follows. Each column is separated by '\t'.
 ```
 tweet-type(tweet or mention), epochtime, tweet-id, mention-target-id, user-id, user-name, user-screen, text,
+```
+
+```
+# 2017-01-01.en.sort
 T       1546300800      000000000000     -       100000000      username1      screenname1      a tweet....
 M       1546300800      000000000001     000000000000     100000001       username2      screenname2        @username1 a mention...
 ```
