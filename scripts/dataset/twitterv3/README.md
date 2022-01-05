@@ -1,7 +1,19 @@
 # Reproduction
-[This storage](https://drive.google.com/drive/folders/1cosefd7ZjEqWFh-vOqyYuc13hryaBdDv?usp=sharing) contains lists of message IDs used for creating dialogues in the train/dev/test sets, respectively ([Twitter terms of service](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases) allow us to share tweet IDs only).
-Crawled dialogues need to be separated into `*.src (contexts)` and `*.tgt (responses)` files.
-`const.sh` specifies the directory where the dialogues should be stored in (by default, `dataset/twitter-v3/en/processed.1turn` for En dialogue data).
+- [This storage](https://drive.google.com/drive/folders/1cosefd7ZjEqWFh-vOqyYuc13hryaBdDv?usp=sharing) contains lists of message IDs used for creating dialogues in the train/dev/test sets, respectively ([Twitter terms of service](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases) allow us to share tweet IDs only).
+- You need to crawl messages in the lists and make dialogues separated into `*.src (contexts)` and `*.tgt (responses)` files.
+- `const.sh` specifies the directory where the dialogues should be stored in (by default, `dataset/twitter-v3/en/processed.1turn` for En dialogue data).
+- Subword tokenization for each set is automatically done by executing `train.sh`.
+
+```bash
+# Examples of dialogues in a fairseq format...
+
+> head dataset/twitter-v3/en/processed.1turn.sp16000/train.* -n1
+==> dataset/twitter-v3/en/processed.1turn.sp16000/train.src <==
+▁It ' s ▁gonna ▁be ▁a ▁JE P IC ▁Year ▁2017
+
+==> dataset/twitter-v3/en/processed.1turn.sp16000/train.tgt <==
+▁happy ▁new ▁year ▁my ▁love s !!!!
+```
 
 
 
