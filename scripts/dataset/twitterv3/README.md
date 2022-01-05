@@ -1,13 +1,17 @@
 
-## 0. crawl and make lists of tweets by day.
+### 0. crawl tweets and make lists of daily tweets. The format of the lists is as follows. Each column is separated by '\t'.
+```
+tweet-type(tweet or mention), epochtime, tweet-id, mention-target-id, user-id, user-name, user-screen, text,
+T       1546300800      000000000000     -       100000000      username1      screenname1      a tweet....
+M       1546300800      000000000001     000000000000     100000001       username2      screenname2        @username1 a mention...
+```
 
-
-## 1. create 'original.dialogs' from 'original.tweets'
+### 1. create 'original.dialogs' from 'original.tweets'
 ```
 ./scripts/dataset/twitterv3/extract_dialogs.sh
 ```
 
-## 2. create 'dataset.ja.1turn' from 'original.dialogs'
+### 2. create 'dataset.ja.1turn' from 'original.dialogs'
 ```
 python scripts/dataset/twitterv3/create_dataset.py \
        ja \
@@ -19,7 +23,7 @@ python scripts/dataset/twitterv3/create_dataset.py \
 ```
 
 
-## 3. (if necessary) tokenize text files in 'dataset.ja.1turn'.
+### 3. (if necessary) tokenize text files in 'dataset.ja.1turn'.
 ```
 #### Ja data
 python scripts/dataset/twitterv3/tokenize.py \
@@ -30,7 +34,7 @@ python scripts/dataset/twitterv3/tokenize.py \
 ```
 
 
-## 4. (if necessary) filter conversations by their length, whether they were made by bots, etc. This step requires to run 1) ./profile/gather_profile.sh, 2) python profile/preprocess_description.py, and 3) ./profile/save_bot_uids.sh to list up the IDs bots.
+### 4. (if necessary) filter conversations by their length, whether they were made by bots, etc. 
 ```
 #### Ja data
 python scripts/dataset/twitterv3/filter_dialogs.py \
