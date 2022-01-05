@@ -1,8 +1,13 @@
+# Reproduction
+`scripts/dataset/twitterv3/ids` contains lists of message IDs used for creating dialogues of train/dev/test sets, respectively.
 
+
+
+# Original steps to make the twitter dataset
 ### 0. crawl tweets and make lists of daily tweets. 
 The format of the lists is as follows. Each column is separated by '\t'.
 ```
-tweet-type(tweet or mention), epochtime, tweet-id, mention-target-id, user-id, user-name, user-screen, text,
+tweet-type(T or M), epochtime, tweet-id, mention-target-id, user-id, user-name, user-screen, text,
 ```
 
 ```
@@ -45,7 +50,7 @@ python scripts/dataset/twitterv3/tokenize.py \
 python scripts/dataset/twitterv3/filter_dialogs.py \
        dataset.ja.1turn.mecab \
        --lang ja \
-       --bot-id-path scripts/dataset/twitterv3/profiles/bot.uid \
+       --bot-id-path scripts/dataset/twitterv3/ids/bot.uids \
        --min-words 2 \
        --max-words 256 
 
@@ -53,7 +58,7 @@ python scripts/dataset/twitterv3/filter_dialogs.py \
 python scripts/dataset/twitterv3/filter_dialogs.py \
        dataset.en.1turn \
        --lang en \
-       --bot-id-path scripts/dataset/twitterv3/profiles/bot.uid \
+       --bot-id-path scripts/dataset/twitterv3/ids/bot.uids \
        --min-words 2 \
        --max-words 256 
 ```
