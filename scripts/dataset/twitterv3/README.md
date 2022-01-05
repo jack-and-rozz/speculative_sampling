@@ -7,7 +7,7 @@
 ```bash
 # Examples of dialogues in a fairseq format...
 
-> head dataset/twitter-v3/en/processed.1turn.sp16000/train.* -n1
+$ head dataset/twitter-v3/en/processed.1turn.sp16000/train.* -n1
 ==> dataset/twitter-v3/en/processed.1turn.sp16000/train.src <==
 ▁It ' s ▁gonna ▁be ▁a ▁JE P IC ▁Year ▁2017
 
