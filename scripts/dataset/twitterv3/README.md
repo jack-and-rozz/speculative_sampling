@@ -1,14 +1,14 @@
 # Reproduction
 [This storage](https://drive.google.com/drive/folders/1cosefd7ZjEqWFh-vOqyYuc13hryaBdDv?usp=sharing) contains lists of message IDs used for creating dialogues in the train/dev/test sets, respectively.
 Crawled dialogues need to be separated into `*.src (contexts)` and `*.tgt (responses)` files.
-`const.sh` specifies the directory where the dialogue should be stored in (by default, `dataset/twitter-v3/en/processed.1turn` for En dialogue data).
+`const.sh` specifies the directory where the dialogues should be stored in (by default, `dataset/twitter-v3/en/processed.1turn` for En dialogue data).
 
 
 
 
 # Original steps to make the twitter dataset
 ### 0. crawl tweets and make lists of daily tweets. 
-The format of the lists is as follows. Each column is separated by '\t'.
+The format of the message lists is as follows. Each column is separated by '\t'.
 ```
 tweet-type(T or M), unixtime, tweet-id, mention-target-id, user-id, user-name, user-screen, text,
 ```
