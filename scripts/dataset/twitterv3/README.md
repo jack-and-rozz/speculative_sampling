@@ -20,7 +20,7 @@ $ head dataset/twitter-v3/en/processed.1turn.sp16000/train.* -n2
 
 
 
-# (FYI) Original steps to make the twitter dataset
+# (FYI) our procedures to make the twitter dataset
 ### 0. crawl tweets and make lists of daily tweets. 
 The format of the message lists is as follows. Each column is separated by '\t'.
 ```
