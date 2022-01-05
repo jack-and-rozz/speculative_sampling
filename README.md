@@ -35,6 +35,7 @@ refer to [scripts/dataset/twitterv3](https://github.com/jack-and-rozz/speculativ
 ```
 model_name=twitterv3ja_sp16000.baseline.tcvae.all # T-CVAE
 task=dialog
+
 ./train.sh $model_name $task
 
 #### Model candidates

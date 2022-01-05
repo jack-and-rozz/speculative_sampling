@@ -1,5 +1,8 @@
 # Reproduction
-`scripts/dataset/twitterv3/ids` contains lists of message IDs used for creating dialogues of train/dev/test sets, respectively.
+`scripts/dataset/twitterv3/ids` contains lists of message IDs used for creating dialogues in the train/dev/test sets, respectively.
+Crawled dialogues need to be separated into `*.src (contexts)` and `*.tgt (responses)` files.
+`const.sh` specifies the directory where the dialogue should be stored in (by default, `dataset/twitter-v3/ja/processed.1turn` for En dialogue data).
+
 
 
 
