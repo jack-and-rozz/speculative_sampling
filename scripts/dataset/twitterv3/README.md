@@ -28,9 +28,9 @@ tweet-type(T or M), unixtime, tweet-id, mention-target-id, user-id, user-name, u
 ```
 
 ```
-# 2017-01-01.en.sort
+$ head original.tweets/2017-01-01.en.sort
 T       1546300800      000000000000     -       100000000      username1      screenname1      a tweet....
-M       1546300800      000000000001     000000000000     100000001       username2      screenname2        @username1 a mention...
+M       1546300900      000000000001     000000000000     100000001       username2      screenname2        @username1 a mention...
 ```
 
 ### 1. create 'original.dialogs' from 'original.tweets'
