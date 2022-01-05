@@ -1,0 +1,44 @@
+
+twitterv3ja_sp16000.baseline:  "Transformer"
+twitterv3ja_sp16000.baseline.tcvae.shared_dec.independent_enc: "TCVAE"
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc.bow: "TCVAE + BoW Loss"
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc: "TCVAE + KLA(20k)"
+twitterv3ja_sp16000.baseline.tcvae.shared_dec.independent_enc.bow: "TCVAE + BoW Loss"
+
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc.bow: "TCVAE + KLA(20k) + BoW Loss"
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc.bow.ls5: "TCVAE + KLA(20k) + BoW Loss + Proposed(5)"
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc.bow.ls10: "TCVAE + KLA(20k) + BoW Loss + Proposed(10)"
+twitterv3ja_sp16000.baseline.tcvae.shared_dec.independent_enc.ls5: "TCVAE + Proposed(5)" 
+twitterv3ja_sp16000.baseline.tcvae.kla20000.shared_dec.independent_enc.ls5: "TCVAE + KLA(20k) + Proposed(5)"
+twitterv3ja_sp16000.baseline.tcvae.shared_dec.independent_enc.stop_postKL: "TCVAE + StopKL"
+twitterv3ja_sp16000.baseline.tcvae.shared_dec.independent_enc.ls5: "TCVAE + Monte Carlo (5)" 
+
+
+
+baseline: "Transformer"
+baseline.t-spacefusion: "SPACEFUSION"
+baseline.tcvae: "T-CVAE"
+baseline.tcvae.bow1: "T-CVAE + BoW loss"
+baseline.tcvae.kla18775: "T-CVAE + monotonic annealing"
+baseline.tcvae.kla9387.cycle18775: "T-CVAE + cyclic annealing"
+baseline.tcvae.ls5: "T-CVAE + speculative sampling (5)"
+baseline.tcvae.ls2: "T-CVAE + speculative sampling (2)"
+baseline.tcvae.ls10: "T-CVAE + speculative sampling (10)"
+baseline.tcvae.ls20: "T-CVAE + speculative sampling (20)"
+baseline.tcvae.ls5.mean: "T-CVAE + Monte Carlo (5)" 
+
+baseline.tcvae.independent_dec: "T-CVAE"
+baseline.tcvae.independent_dec.ls5: "T-CVAE + speculative sampling (5)"
+
+# for graph
+baseline.tcvae.bow1: "BoW loss"
+baseline.tcvae.kla9387.cycle18775: "Cycl. annealing"
+baseline.tcvae.ls5.mean: "MC sampling (5)" 
+baseline.tcvae.ls2: "Spec. sampling (2)"
+baseline.tcvae.ls5: "Spec. sampling (5)"
+baseline.tcvae.ls10: "Spec. sampling (10)"
+baseline.tcvae.ls20: "Spec. sampling (20)"
+baseline.tcvae.ls40: "Spec. sampling (40)"
+baseline.tcvae.ls80: "Spec. sampling (80)"
+baseline.tcvae.ls5: "Spec. sampling"
+

@@ -1,0 +1,12 @@
+numpy==1.20.0
+tensorboardX
+tqdm
+click
+pandas
+pyyaml
+torch==1.2.0
+mecab-python
+sentencepiece
+requests
+fastTSNE
+orderedset
