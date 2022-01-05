@@ -5,14 +5,15 @@
 - Subword tokenization for each set is automatically done by executing `train.sh`.
 
 ```bash
-# Examples of dialogues in a fairseq format...
-
+# An example of dialogues in a fairseq format...
 $ head dataset/twitter-v3/en/processed.1turn.sp16000/train.* -n1
 ==> dataset/twitter-v3/en/processed.1turn.sp16000/train.src <==
 ▁It ' s ▁gonna ▁be ▁a ▁JE P IC ▁Year ▁2017
+▁na ▁na ▁na aaaa . ▁After ▁tonight ▁ima ▁get ▁on ▁my ▁salad ▁shit t t .
 
 ==> dataset/twitter-v3/en/processed.1turn.sp16000/train.tgt <==
 ▁happy ▁new ▁year ▁my ▁love s !!!!
+▁i ' m ▁on ▁a ▁trip ▁but ▁when ▁i ▁get ▁back ▁...
 ```
 
 
