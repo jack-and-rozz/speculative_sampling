@@ -7,7 +7,6 @@ fairseq
 _bak
 
 checkpoints
-dataset
 tools
 torch*
 tmp*
