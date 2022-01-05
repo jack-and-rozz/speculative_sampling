@@ -3,6 +3,7 @@
 - You need to crawl messages in the lists and make dialogues separated into `*.src (contexts)` and `*.tgt (responses)` files.
 - `const.sh` specifies the directory where the dialogues should be stored in (by default, `dataset/twitter-v3/en/processed.1turn` for En dialogue data).
 - Subword tokenization for each set is automatically done by executing `train.sh`.
+- If you need to use your own dataset, define the directory, training data for sentencepiece, and suffixes for context/response files in `const.sh`.
 
 ```bash
 # An example of dialogues in a fairseq format...
