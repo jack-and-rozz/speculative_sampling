@@ -1,0 +1,4 @@
+from .label_smoothed_cross_entropy import LabelSmoothedCrossEntropyCriterionAtSent
+from .vae_loss import CVAECriterion
+from .spacefusion_loss import TCVAESpaceFusionCriterion
+from .domain_weighting_lsce import *
